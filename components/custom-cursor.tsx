@@ -298,10 +298,10 @@ export function CustomCursor() {
       <div ref={chassisRef} className="relative h-[54px] w-11">
         <div
           ref={headRef}
-          className="absolute left-1/2 top-0 h-7 w-9 -translate-x-1/2 rounded-[11px] border border-[rgba(225,29,72,0.35)] bg-[linear-gradient(180deg,rgba(250,250,250,0.96),rgba(250,250,250,0.82))] shadow-[0_0_18px_rgba(250,250,250,0.18)]"
+          className="absolute left-1/2 top-0 h-7 w-9 -translate-x-1/2 rounded-[11px] border border-[rgba(212,175,55,0.38)] bg-[linear-gradient(180deg,rgba(250,250,250,0.96),rgba(250,250,250,0.82))] shadow-[0_0_18px_rgba(250,250,250,0.18)]"
         >
           <span className="absolute left-1/2 top-[-5px] h-2 w-[1px] -translate-x-1/2 bg-[rgba(250,250,250,0.7)]" />
-          <span className="absolute left-1/2 top-[-8px] h-2 w-2 -translate-x-1/2 rounded-full border border-[rgba(225,29,72,0.45)] bg-[rgba(225,29,72,0.18)]" />
+          <span className="absolute left-1/2 top-[-8px] h-2 w-2 -translate-x-1/2 rounded-full border border-[rgba(212,175,55,0.48)] bg-[rgba(212,175,55,0.22)]" />
           <span
             ref={leftBrowRef}
             className="absolute left-[9px] top-[7px] h-[1px] w-[7px] bg-[rgba(11,11,12,0.8)]"
@@ -311,8 +311,8 @@ export function CustomCursor() {
             className="absolute right-[9px] top-[7px] h-[1px] w-[7px] bg-[rgba(11,11,12,0.8)]"
           />
           <div ref={faceRef} className="absolute inset-x-0 top-[10px] flex justify-center gap-[6px]">
-            <span ref={leftEyeRef} className="block h-[6px] w-[6px] rounded-full bg-[#0B0B0C]" />
-            <span ref={rightEyeRef} className="block h-[6px] w-[6px] rounded-full bg-[#0B0B0C]" />
+            <span ref={leftEyeRef} className="block h-[6px] w-[6px] rounded-full bg-[#0A0A0A]" />
+            <span ref={rightEyeRef} className="block h-[6px] w-[6px] rounded-full bg-[#0A0A0A]" />
           </div>
           <span
             ref={mouthRef}
@@ -322,7 +322,7 @@ export function CustomCursor() {
 
         <div
           ref={bodyRef}
-          className="absolute left-1/2 top-[28px] h-[14px] w-7 -translate-x-1/2 rounded-[7px] border border-[rgba(225,29,72,0.35)] bg-[linear-gradient(180deg,rgba(225,29,72,0.92),rgba(190,18,60,0.85))] shadow-[0_0_20px_rgba(225,29,72,0.22)]"
+          className="absolute left-1/2 top-[28px] h-[14px] w-7 -translate-x-1/2 rounded-[7px] border border-[rgba(212,175,55,0.4)] bg-[linear-gradient(180deg,rgba(212,175,55,0.96),rgba(250,204,21,0.88))] shadow-[0_0_20px_rgba(212,175,55,0.24)]"
         >
           <span className="absolute left-[-4px] top-1/2 h-[1px] w-[5px] -translate-y-1/2 bg-[rgba(250,250,250,0.65)]" />
           <span className="absolute right-[-4px] top-1/2 h-[1px] w-[5px] -translate-y-1/2 bg-[rgba(250,250,250,0.65)]" />
@@ -339,11 +339,11 @@ export function CustomCursor() {
         />
         <span
           ref={leftShoeRef}
-          className="absolute left-[10px] top-[51px] h-[5px] w-[10px] rounded-full border border-[rgba(225,29,72,0.3)] bg-[#0B0B0C] shadow-[0_0_8px_rgba(11,11,12,0.25)]"
+          className="absolute left-[10px] top-[51px] h-[5px] w-[10px] rounded-full border border-[rgba(212,175,55,0.34)] bg-[#0A0A0A] shadow-[0_0_8px_rgba(11,11,12,0.25)]"
         />
         <span
           ref={rightShoeRef}
-          className="absolute right-[10px] top-[51px] h-[5px] w-[10px] rounded-full border border-[rgba(225,29,72,0.3)] bg-[#0B0B0C] shadow-[0_0_8px_rgba(11,11,12,0.25)]"
+          className="absolute right-[10px] top-[51px] h-[5px] w-[10px] rounded-full border border-[rgba(212,175,55,0.34)] bg-[#0A0A0A] shadow-[0_0_8px_rgba(11,11,12,0.25)]"
         />
       </div>
     </div>

@@ -22,7 +22,7 @@ export function AchievementsSection() {
           {achievements.map((achievement) => (
             <div
               key={achievement}
-              className="tag hover-glow border border-[#232326] bg-[#1A1A1D] px-5 py-4 text-sm uppercase tracking-[0.18em] text-[#FAFAFA] shadow-none transition duration-300"
+              className="tag hover-glow border border-white/10 bg-[#121212] px-5 py-4 text-sm uppercase tracking-[0.18em] text-[#EDEDED] shadow-none transition duration-300"
               data-animate
               data-cursor="hover"
             >

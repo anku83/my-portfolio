@@ -28,18 +28,18 @@ export function SkillsSection() {
                 data-animate
                 data-cursor="hover"
                 maxTilt={6}
-                className="group hover-glow relative overflow-hidden rounded-[16px] border border-[#232326] bg-[#151518] p-6 shadow-glass transition duration-300"
+                className="glass-card glass-panel group hover-glow relative overflow-hidden rounded-[16px] p-6 shadow-glass transition duration-300"
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${skill.accent} opacity-0 transition duration-500 group-hover:opacity-[0.16]`} />
                 <div className="relative flex items-start justify-between gap-6">
-                  <div className="icon-interactive rounded-2xl border border-[#232326] bg-[#111113] p-3 text-2xl text-[#E11D48]">
+                  <div className="icon-interactive rounded-2xl border border-white/10 bg-[rgba(255,255,255,0.02)] p-3 text-2xl text-[#D4AF37]">
                     <Icon />
                   </div>
                   <span className="tag border border-white/10 text-[10px] uppercase tracking-[0.26em]">
                     {skill.category}
                   </span>
                 </div>
-                <h3 className="relative mt-7 font-display text-3xl text-[#FAFAFA]">{skill.name}</h3>
+                <h3 className="relative mt-7 font-display text-3xl text-[#EDEDED]">{skill.name}</h3>
                 <p className="relative mt-3 text-sm leading-7 text-[#A1A1AA]">
                   Crafted into my workflow for analysis, product execution, or interface development.
                 </p>

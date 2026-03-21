@@ -2,6 +2,8 @@
 
 import { useRef } from "react";
 import { FiGithub, FiLinkedin, FiMail, FiPhone } from "react-icons/fi";
+import { GlassCard } from "@/components/glass-card";
+import { TiltCard } from "@/components/tilt-card";
 import { intro } from "@/lib/portfolio-data";
 import { SectionHeading } from "@/components/section-heading";
 import { useSceneReveal } from "@/hooks/use-scene-reveal";
@@ -20,7 +22,7 @@ export function ContactSection() {
   return (
     <section ref={ref} id="contact" className="section-frame pb-28 sm:pb-32">
       <div className="container-lux">
-        <div className="rounded-[16px] border border-[#232326] bg-[#151518] p-8 shadow-ember sm:p-10 lg:p-12">
+        <GlassCard className="p-8 shadow-ember sm:p-10 lg:p-12">
           <SectionHeading
             eyebrow="Contact"
             title="The final scene is simple: if the work resonates, let's connect."
@@ -31,29 +33,32 @@ export function ContactSection() {
             {contacts.map((item) => {
               const Icon = item.icon;
               return (
-                <a
+                <TiltCard
+                  as="a"
                   key={item.label}
                   href={item.href}
+                  tilt
+                  maxTilt={8}
                   target={item.href.startsWith("http") ? "_blank" : undefined}
                   rel={item.href.startsWith("http") ? "noreferrer" : undefined}
-                  className="group hover-glow rounded-[16px] border border-[#232326] bg-[#111113] px-6 py-6 transition duration-300 hover:bg-[#151518]"
+                  className="glass-card glass-panel group hover-glow rounded-[16px] px-6 py-6 transition duration-300"
                   data-animate
                   data-cursor="hover"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="icon-interactive rounded-2xl border border-[#232326] bg-[#151518] p-3 text-xl text-[#E11D48]">
+                    <div className="icon-interactive rounded-2xl border border-white/10 bg-[rgba(255,255,255,0.02)] p-3 text-xl text-[#D4AF37]">
                       <Icon />
                     </div>
                     <div>
                       <p className="text-xs uppercase tracking-[0.24em] text-[#A1A1AA]">{item.label}</p>
-                      <p className="mt-2 text-base text-[#FAFAFA]">{item.value}</p>
+                      <p className="mt-2 text-base text-[#EDEDED]">{item.value}</p>
                     </div>
                   </div>
-                </a>
+                </TiltCard>
               );
             })}
           </div>
-        </div>
+        </GlassCard>
       </div>
     </section>
   );

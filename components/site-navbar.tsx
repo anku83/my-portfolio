@@ -305,12 +305,12 @@ export function SiteNavbar({ name }: { name: string }) {
       <div className="container-lux pt-4 sm:pt-5">
         <div
           ref={shellRef}
-          className="flex items-center justify-between rounded-full border border-[#232326] bg-[rgba(11,11,12,0.6)] px-4 py-3 backdrop-blur-[8px] sm:px-6"
+          className="flex items-center justify-between rounded-full border border-white/10 bg-[rgba(10,10,10,0.72)] px-4 py-3 backdrop-blur-[8px] sm:px-6"
         >
           <a
             href="#home"
             onClick={handleNavigate("home")}
-            className="nav-logo text-sm font-bold uppercase tracking-[0.28em] text-[#FAFAFA] sm:text-[0.95rem]"
+            className="nav-logo text-sm font-bold uppercase tracking-[0.28em] text-[#EDEDED] sm:text-[0.95rem]"
             data-cursor="hover"
           >
             {name}
@@ -335,7 +335,7 @@ export function SiteNavbar({ name }: { name: string }) {
                     aria-current={activeSection === item.id ? "page" : undefined}
                     className={clsx(
                       "nav-link rounded-full px-3 py-2 text-[11px] font-medium uppercase tracking-[0.24em] text-[#A1A1AA] transition-colors duration-300 sm:px-4",
-                      activeSection === item.id && "text-[#FAFAFA]"
+                      activeSection === item.id && "text-[#EDEDED]"
                     )}
                   >
                     {item.label}

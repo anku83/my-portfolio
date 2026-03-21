@@ -23,7 +23,7 @@ export function AboutSection() {
           <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-14">
             <div data-animate>
               <p className="eyebrow">Who I Am</p>
-              <h3 className="mt-4 font-display text-3xl text-[#FAFAFA] sm:text-4xl">
+              <h3 className="mt-4 font-display text-3xl text-[#EDEDED] sm:text-4xl">
                 Analytical by instinct, visual by practice, always learning by building.
               </h3>
             </div>

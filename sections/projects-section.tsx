@@ -29,7 +29,7 @@ export function ProjectsSection() {
               data-animate
               data-cursor="hover"
               maxTilt={7}
-              className="group hover-glow relative overflow-hidden rounded-[16px] border border-[#232326] bg-[#151518] p-7 shadow-glass transition duration-300"
+              className="glass-card glass-panel group hover-glow relative overflow-hidden rounded-[16px] p-7 shadow-glass transition duration-300"
             >
               <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.02),transparent_55%)] opacity-70" />
               <div className="relative">
@@ -49,8 +49,8 @@ export function ProjectsSection() {
                   </span>
                   <span className="text-xs uppercase tracking-[0.24em] text-[#A1A1AA]">{project.period}</span>
                 </div>
-                <h3 className="mt-8 font-display text-4xl leading-tight text-[#FAFAFA]">{project.title}</h3>
-                <p className="mt-4 text-sm uppercase tracking-[0.22em] text-[#E11D48]">{project.highlight}</p>
+                <h3 className="mt-8 font-display text-4xl leading-tight text-[#EDEDED]">{project.title}</h3>
+                <p className="mt-4 text-sm uppercase tracking-[0.22em] text-[#D4AF37]">{project.highlight}</p>
                 <p className="mt-6 text-base leading-8 text-[#A1A1AA]">{project.description}</p>
                 <div className="mt-7 flex flex-wrap gap-2">
                   {project.stack.map((item) => (

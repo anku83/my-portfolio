@@ -2,7 +2,7 @@
 
 import clsx from "clsx";
 import { gsap } from "gsap";
-import type { ElementType, HTMLAttributes, ReactNode } from "react";
+import type { ComponentPropsWithoutRef, ElementType, ReactNode } from "react";
 import { useEffect, useRef } from "react";
 
 type TiltCardProps<T extends ElementType> = {
@@ -11,7 +11,7 @@ type TiltCardProps<T extends ElementType> = {
   children: ReactNode;
   tilt?: boolean;
   maxTilt?: number;
-} & Omit<HTMLAttributes<HTMLElement>, "className" | "children">;
+} & Omit<ComponentPropsWithoutRef<T>, "as" | "className" | "children">;
 
 export function TiltCard<T extends ElementType = "div">({
   as,
@@ -157,7 +157,7 @@ export function TiltCard<T extends ElementType = "div">({
         <div
           ref={glowRef}
           aria-hidden="true"
-          className="pointer-events-none absolute top-1/2 z-[1] h-36 w-36 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.09),rgba(225,29,72,0.05),rgba(255,255,255,0)_72%)] opacity-0"
+          className="pointer-events-none absolute top-1/2 z-[1] h-36 w-36 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.08),rgba(212,175,55,0.1),rgba(255,255,255,0)_72%)] opacity-0"
         />
       ) : null}
       <div ref={contentRef} className="relative z-[2]">

@@ -34,7 +34,7 @@ export function MagneticButton({
     onMouseMove: handleMove,
     onMouseLeave: reset,
     className: clsx(
-      "group btn-primary relative inline-flex items-center justify-center overflow-hidden rounded-[12px] border border-transparent px-6 py-3 text-sm font-semibold uppercase tracking-[0.24em] transition duration-300 focus:outline-none focus:ring-2 focus:ring-[rgba(225,29,72,0.2)]",
+      "group btn-primary relative inline-flex items-center justify-center overflow-hidden rounded-[12px] border border-transparent px-6 py-3 text-sm font-semibold uppercase tracking-[0.24em] transition duration-300 focus:outline-none focus:ring-2 focus:ring-[rgba(212,175,55,0.28)]",
       className
     ),
     "data-cursor": "hover"

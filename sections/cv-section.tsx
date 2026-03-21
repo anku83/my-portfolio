@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import { GlassCard } from "@/components/glass-card";
 import { SectionHeading } from "@/components/section-heading";
 import { MagneticButton } from "@/components/magnetic-button";
 import { useSceneReveal } from "@/hooks/use-scene-reveal";
@@ -12,7 +13,7 @@ export function CVSection({ onPreviewCV }: { onPreviewCV: () => void }) {
   return (
     <section ref={ref} id="cv" className="section-frame">
       <div className="container-lux">
-        <div className="rounded-[16px] border border-[#232326] bg-[#151518] p-8 shadow-ember sm:p-10 lg:p-12">
+        <GlassCard className="p-8 shadow-ember sm:p-10 lg:p-12">
           <SectionHeading
             eyebrow="Curriculum Vitae"
             title="A high-end resume preview flow designed to feel native to the portfolio."
@@ -20,14 +21,14 @@ export function CVSection({ onPreviewCV }: { onPreviewCV: () => void }) {
           />
           <div className="mt-10 flex flex-wrap gap-4" data-animate>
             <MagneticButton onClick={onPreviewCV}>Preview CV</MagneticButton>
-            <MagneticButton href="/cv/ankit-kumar-cv-preview.pdf" download className="bg-[#151518] text-[#FAFAFA] border border-[#232326] hover:bg-[#1A1A1D]">
+            <MagneticButton href="/cv/ankit-kumar-cv-preview.pdf" download className="bg-[#121212] text-[#EDEDED] border border-white/10 hover:bg-[rgba(255,255,255,0.02)]">
               Download PDF
             </MagneticButton>
-            <MagneticButton href="/cv/ankit-kumar-cv.docx" download className="bg-[#151518] text-[#FAFAFA] border border-[#232326] hover:bg-[#1A1A1D]">
+            <MagneticButton href="/cv/ankit-kumar-cv.docx" download className="bg-[#121212] text-[#EDEDED] border border-white/10 hover:bg-[rgba(255,255,255,0.02)]">
               Download DOCX
             </MagneticButton>
           </div>
-        </div>
+        </GlassCard>
       </div>
     </section>
   );

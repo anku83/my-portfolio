@@ -24,17 +24,17 @@ export function CVModal({ open, onClose }: { open: boolean; onClose: () => void 
   return (
     <div className="fixed inset-0 z-[90] flex items-center justify-center px-4 py-8">
       <button className="absolute inset-0 bg-black/70" aria-label="Close CV preview" onClick={onClose} />
-      <div className="relative z-10 flex max-h-[90vh] w-full max-w-6xl flex-col overflow-hidden rounded-[16px] border border-[#232326] bg-[#151518] shadow-[0_4px_20px_rgba(0,0,0,0.4)]">
+      <div className="relative z-10 flex max-h-[90vh] w-full max-w-6xl flex-col overflow-hidden rounded-[16px] border border-white/10 bg-[#121212] shadow-[0_4px_20px_rgba(0,0,0,0.4)]">
         <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/10 px-6 py-4 sm:px-8">
           <div>
             <p className="eyebrow">Resume</p>
-            <h3 className="mt-2 font-display text-2xl text-[#FAFAFA]">Preview CV</h3>
+            <h3 className="mt-2 font-display text-2xl text-[#EDEDED]">Preview CV</h3>
           </div>
           <div className="flex flex-wrap items-center gap-3">
             <a
               href="/cv/ankit-kumar-cv-preview.pdf"
               download
-              className="rounded-full border border-[#232326] px-4 py-2 text-xs uppercase tracking-[0.24em] text-[#FAFAFA] transition hover:border-[#2E2E32] hover:bg-[#1A1A1D]"
+              className="rounded-full border border-white/10 px-4 py-2 text-xs uppercase tracking-[0.24em] text-[#EDEDED] transition hover:border-[rgba(212,175,55,0.5)] hover:bg-[rgba(255,255,255,0.02)]"
               data-cursor="hover"
             >
               Download PDF
@@ -42,14 +42,14 @@ export function CVModal({ open, onClose }: { open: boolean; onClose: () => void 
             <a
               href="/cv/ankit-kumar-cv.docx"
               download
-              className="rounded-full border border-[#232326] px-4 py-2 text-xs uppercase tracking-[0.24em] text-[#A1A1AA] transition hover:border-[#2E2E32] hover:text-[#FAFAFA]"
+              className="rounded-full border border-white/10 px-4 py-2 text-xs uppercase tracking-[0.24em] text-[#A1A1AA] transition hover:border-[rgba(212,175,55,0.5)] hover:text-[#FACC15]"
               data-cursor="hover"
             >
               Download DOCX
             </a>
             <button
               onClick={onClose}
-              className="rounded-full border border-[#232326] px-4 py-2 text-xs uppercase tracking-[0.24em] text-[#A1A1AA] transition hover:border-[#2E2E32] hover:text-[#FAFAFA]"
+              className="rounded-full border border-white/10 px-4 py-2 text-xs uppercase tracking-[0.24em] text-[#A1A1AA] transition hover:border-[rgba(212,175,55,0.5)] hover:text-[#FACC15]"
               data-cursor="hover"
             >
               Close

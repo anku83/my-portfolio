@@ -19,7 +19,7 @@ export function ParticleCanvas() {
     renderer.setSize(window.innerWidth, window.innerHeight);
     mount.appendChild(renderer.domElement);
 
-    const count = 900;
+    const count = 1500;
     const positions = new Float32Array(count * 3);
     const scales = new Float32Array(count);
 
@@ -85,10 +85,10 @@ export function ParticleCanvas() {
           float dist = distance(gl_PointCoord, vec2(0.5));
           float softness = smoothstep(0.5, 0.0, dist);
           float alpha = softness * (0.12 + vScale * 0.22 + vGlow * 0.24);
-          vec3 colorA = vec3(0.98, 0.98, 0.99);
-          vec3 colorB = vec3(0.882, 0.114, 0.282);
+          vec3 colorA = vec3(0.988, 0.925, 0.62);
+          vec3 colorB = vec3(0.831, 0.686, 0.216);
           vec3 color = mix(colorA, colorB, clamp(vScale + vGlow * 0.7, 0.0, 1.0));
-          color += vec3(0.12, 0.03, 0.06) * vGlow;
+          color += vec3(0.16, 0.11, 0.03) * vGlow;
           gl_FragColor = vec4(color, alpha);
         }
       `
