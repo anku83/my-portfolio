@@ -22,7 +22,7 @@ export function MagneticButton({
     const bounds = node.getBoundingClientRect();
     const x = event.clientX - bounds.left - bounds.width / 2;
     const y = event.clientY - bounds.top - bounds.height / 2;
-    node.style.transform = `translate3d(${x * 0.12}px, ${y * 0.12}px, 0) scale(1.02)`;
+    node.style.transform = `translate3d(${x * 0.1}px, ${y * 0.1}px, 0) scale(1.05)`;
   };
 
   const reset = (event: React.MouseEvent<HTMLElement>) => {

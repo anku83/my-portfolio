@@ -28,7 +28,7 @@ export function ProjectsSection() {
               key={project.title}
               data-animate
               data-cursor="hover"
-              maxTilt={8}
+              maxTilt={7}
               className="group hover-glow relative overflow-hidden rounded-[16px] border border-[#232326] bg-[#151518] p-7 shadow-glass transition duration-300"
             >
               <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.02),transparent_55%)] opacity-70" />

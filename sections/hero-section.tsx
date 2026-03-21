@@ -12,7 +12,7 @@ export function HeroSection({ onPreviewCV }: { onPreviewCV: () => void }) {
   useSceneReveal(ref);
 
   return (
-    <section ref={ref} id="top" className="section-frame min-h-screen pt-32 sm:pt-36">
+    <section ref={ref} id="home" className="section-frame min-h-screen pt-36 sm:pt-40">
       <div className="container-lux grid items-center gap-12 lg:grid-cols-[1.2fr_0.8fr]">
         <div className="relative z-10">
           <p className="eyebrow" data-animate>

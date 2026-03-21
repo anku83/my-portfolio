@@ -8,6 +8,9 @@ let registered = false;
 export function ensureGsapPlugins() {
   if (!registered && typeof window !== "undefined") {
     gsap.registerPlugin(ScrollTrigger);
+    gsap.config({
+      nullTargetWarn: false,
+    });
     registered = true;
   }
 

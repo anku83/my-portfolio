@@ -23,7 +23,7 @@ export function ContactSection() {
         <div className="rounded-[16px] border border-[#232326] bg-[#151518] p-8 shadow-ember sm:p-10 lg:p-12">
           <SectionHeading
             eyebrow="Contact"
-            title="The final scene is simple: if the work resonates, let’s connect."
+            title="The final scene is simple: if the work resonates, let's connect."
             copy="Open to opportunities where data, product thinking, and modern development intersect."
           />
 
@@ -41,7 +41,7 @@ export function ContactSection() {
                   data-cursor="hover"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="rounded-2xl border border-[#232326] bg-[#151518] p-3 text-xl text-[#E11D48] transition duration-300">
+                    <div className="icon-interactive rounded-2xl border border-[#232326] bg-[#151518] p-3 text-xl text-[#E11D48]">
                       <Icon />
                     </div>
                     <div>

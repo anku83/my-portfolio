@@ -27,12 +27,12 @@ export function SkillsSection() {
                 key={skill.name}
                 data-animate
                 data-cursor="hover"
-                maxTilt={10}
+                maxTilt={6}
                 className="group hover-glow relative overflow-hidden rounded-[16px] border border-[#232326] bg-[#151518] p-6 shadow-glass transition duration-300"
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${skill.accent} opacity-0 transition duration-500 group-hover:opacity-[0.16]`} />
                 <div className="relative flex items-start justify-between gap-6">
-                  <div className="rounded-2xl border border-[#232326] bg-[#111113] p-3 text-2xl text-[#E11D48] transition duration-300 group-hover:scale-110">
+                  <div className="icon-interactive rounded-2xl border border-[#232326] bg-[#111113] p-3 text-2xl text-[#E11D48]">
                     <Icon />
                   </div>
                   <span className="tag border border-white/10 text-[10px] uppercase tracking-[0.26em]">
