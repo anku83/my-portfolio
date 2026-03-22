@@ -1,0 +1,129 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="36" fill="#080809"/>
+  <g opacity="0.28" stroke="#6B5722" stroke-width="2">
+    <path d="M0 612L138 524L262 560L410 432L570 468L744 324L906 374L1104 214L1200 252"/>
+    <path d="M82 0L168 86L138 210L256 286L234 430L368 536L340 680"/>
+    <path d="M612 0L646 128L826 196L760 362L924 468L876 720"/>
+    <path d="M1014 0L1200 104L1120 238L1200 410L1060 558L1106 720"/>
+  </g>
+  <g fill="#D4AF37" opacity="0.7">
+    <circle cx="138" cy="524" r="8"/>
+    <circle cx="410" cy="432" r="8"/>
+    <circle cx="744" cy="324" r="8"/>
+    <circle cx="1104" cy="214" r="8"/>
+    <circle cx="168" cy="86" r="8"/>
+    <circle cx="256" cy="286" r="8"/>
+    <circle cx="368" cy="536" r="8"/>
+    <circle cx="646" cy="128" r="8"/>
+    <circle cx="924" cy="468" r="8"/>
+    <circle cx="1120" cy="238" r="8"/>
+  </g>
+  <g filter="url(#panelShadow)">
+    <rect x="126" y="139" width="588" height="402" rx="34" fill="#121214" fill-opacity="0.92"/>
+    <rect x="732" y="159" width="342" height="360" rx="32" fill="#171718" fill-opacity="0.9"/>
+    <rect x="126.75" y="139.75" width="586.5" height="400.5" rx="33.25" stroke="url(#panelStroke)" stroke-opacity="0.85" stroke-width="1.5"/>
+    <rect x="732.75" y="159.75" width="340.5" height="358.5" rx="31.25" stroke="url(#panelStroke)" stroke-opacity="0.7" stroke-width="1.5"/>
+  </g>
+  <text x="165" y="200" fill="#F5F5F5" font-size="24" font-family="Arial, Helvetica, sans-serif">AI Road Classification System</text>
+  <text x="770" y="208" fill="#F5F5F5" font-size="22" font-family="Arial, Helvetica, sans-serif">AI Output</text>
+  <g filter="url(#screenGlow)">
+    <rect x="165" y="248" width="278" height="246" rx="26" fill="#1A1C21"/>
+    <rect x="165.75" y="248.75" width="276.5" height="244.5" rx="25.25" stroke="#E7C670" stroke-opacity="0.85" stroke-width="1.5"/>
+    <rect x="184" y="266" width="242" height="210" rx="18" fill="url(#roadSky)"/>
+    <path d="M277 476L314 266H364L349 476H277Z" fill="#45484E"/>
+    <path d="M190 476L301 266H314L277 476H190Z" fill="#6D7178"/>
+    <path d="M426 476L364 266H426V476Z" fill="#7A7D82"/>
+    <path d="M307 476L321 266H344L338 476H307Z" fill="#27282C"/>
+    <path d="M319 476L326 266H335L330 476H319Z" fill="#F7B941"/>
+    <path d="M332 476L337 266H344L340 476H332Z" fill="#F6C24F"/>
+    <rect x="206" y="302" width="150" height="58" rx="14" fill="#121214" fill-opacity="0.34" stroke="#F0D287" stroke-width="2"/>
+    <rect x="252" y="383" width="116" height="44" rx="12" fill="#121214" fill-opacity="0.24" stroke="#C7C9D1" stroke-width="1.5"/>
+    <text x="246" y="340" fill="#F5F5F5" font-size="22" font-weight="700" font-family="Arial, Helvetica, sans-serif">Highway</text>
+    <text x="274" y="411" fill="#F5F5F5" font-size="18" font-family="Arial, Helvetica, sans-serif">Urban Road</text>
+  </g>
+  <g>
+    <rect x="462" y="248" width="197" height="246" rx="24" fill="#FFFFFF" fill-opacity="0.03" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="487" y="292" fill="#F1F1F1" font-size="18" font-family="Arial, Helvetica, sans-serif">ML Previews</text>
+    <rect x="487" y="320" width="104" height="40" rx="12" fill="#2B2B2F" stroke="#9D8241"/>
+    <rect x="487" y="381" width="128" height="40" rx="12" fill="#2B2B2F" stroke="#9D8241"/>
+    <rect x="487" y="442" width="152" height="40" rx="12" fill="#2B2B2F" stroke="#9D8241"/>
+    <text x="509" y="346" fill="#F5F5F5" font-size="16" font-family="Arial, Helvetica, sans-serif">Highway</text>
+    <text x="505" y="407" fill="#F5F5F5" font-size="16" font-family="Arial, Helvetica, sans-serif">Urban Road</text>
+    <text x="503" y="468" fill="#F5F5F5" font-size="16" font-family="Arial, Helvetica, sans-serif">Damaged Road</text>
+  </g>
+  <g filter="url(#goldDust)">
+    <circle cx="615" cy="393" r="80" fill="#D4AF37" fill-opacity="0.12"/>
+    <circle cx="657" cy="402" r="56" fill="#E7C670" fill-opacity="0.14"/>
+  </g>
+  <g>
+    <rect x="770" y="248" width="266" height="134" rx="24" fill="#FFFFFF" fill-opacity="0.03" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="792" y="292" fill="#F1F1F1" font-size="16" font-family="Arial, Helvetica, sans-serif">Road Type Confidence Score</text>
+    <text x="792" y="336" fill="#FFFFFF" font-size="26" font-weight="700" font-family="Arial, Helvetica, sans-serif">94%</text>
+    <text x="792" y="380" fill="#F1F1F1" font-size="16" font-family="Arial, Helvetica, sans-serif">Condition</text>
+    <g font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#F5F5F5">
+      <rect x="792" y="392" width="65" height="30" rx="15" fill="#222226" stroke="#5E6066"/>
+      <rect x="869" y="392" width="86" height="30" rx="15" fill="#222226" stroke="#5E6066"/>
+      <rect x="967" y="392" width="67" height="30" rx="15" fill="#222226" stroke="#5E6066"/>
+      <text x="813" y="411">Good</text>
+      <text x="885" y="411">Moderate</text>
+      <text x="988" y="411">Poor</text>
+    </g>
+  </g>
+  <text x="770" y="462" fill="#F1F1F1" font-size="16" font-family="Arial, Helvetica, sans-serif">Real-time / Static confidence</text>
+  <g>
+    <path d="M808 515C808 474 841 441 882 441C923 441 956 474 956 515" stroke="#E2BF6D" stroke-width="8" stroke-linecap="round"/>
+    <path d="M824 515C824 483 850 457 882 457C914 457 940 483 940 515" stroke="#C99948" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+    <path d="M841 515C841 492 859 474 882 474C905 474 923 492 923 515" stroke="#9D6B2B" stroke-width="8" stroke-linecap="round" opacity="0.72"/>
+    <path d="M858 515C858 501 868 491 882 491C896 491 906 501 906 515" stroke="#56432A" stroke-width="8" stroke-linecap="round" opacity="0.82"/>
+    <circle cx="882" cy="515" r="17" fill="#1A1B1F" stroke="#2B2D33" stroke-width="4"/>
+  </g>
+  <g stroke="#9F8352" stroke-width="2" opacity="0.5">
+    <path d="M974 515H1048"/>
+    <path d="M974 485H1048"/>
+  </g>
+  <g fill="#DAB262">
+    <rect x="973" y="504" width="10" height="36" rx="5"/>
+    <rect x="991" y="482" width="10" height="58" rx="5"/>
+    <rect x="1009" y="460" width="10" height="80" rx="5"/>
+    <rect x="1027" y="492" width="10" height="48" rx="5" opacity="0.6"/>
+    <rect x="1045" y="500" width="10" height="40" rx="5" opacity="0.45"/>
+  </g>
+  <path d="M978 531C992 531 1000 499 1014 499C1028 499 1044 519 1060 519C1076 519 1087 492 1100 492" stroke="#F1D79A" stroke-width="2" stroke-linecap="round"/>
+  <g fill="#E6C87A">
+    <circle cx="1014" cy="499" r="4"/>
+    <circle cx="1060" cy="519" r="4"/>
+    <circle cx="1100" cy="492" r="4"/>
+  </g>
+  <defs>
+    <linearGradient id="panelStroke" x1="165" y1="139" x2="1062" y2="519" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6B5B2A"/>
+      <stop offset="0.5" stop-color="#3C3424"/>
+      <stop offset="1" stop-color="#8A6A33"/>
+    </linearGradient>
+    <linearGradient id="roadSky" x1="305" y1="266" x2="305" y2="476" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#BFD8F5"/>
+      <stop offset="0.44" stop-color="#C6D1DA"/>
+      <stop offset="0.45" stop-color="#567A3B"/>
+      <stop offset="1" stop-color="#2E2F32"/>
+    </linearGradient>
+    <filter id="panelShadow" x="100" y="120" width="1004" height="430" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="10"/>
+      <feGaussianBlur stdDeviation="12"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0208333 0 0 0 0 0.0208333 0 0 0 0 0.025 0 0 0 0.42 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_2"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_2" result="shape"/>
+    </filter>
+    <filter id="screenGlow" x="152" y="235" width="304" height="272" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur_1_2"/>
+    </filter>
+    <filter id="goldDust" x="495" y="273" width="242" height="258" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="26" result="effect1_foregroundBlur_1_2"/>
+    </filter>
+  </defs>
+</svg>

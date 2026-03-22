@@ -1,0 +1,126 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="36" fill="#09090B"/>
+  <g opacity="0.24" stroke="#6C5728" stroke-width="2">
+    <path d="M18 152L146 96L276 154L462 48L622 116L760 74L928 160L1138 98"/>
+    <path d="M72 708L138 548L98 392L224 260L196 102"/>
+    <path d="M966 712L1036 566L1002 424L1110 278L1078 112"/>
+    <path d="M508 712L570 580L534 416L662 266L626 90"/>
+  </g>
+  <g fill="#D4AF37" opacity="0.72">
+    <circle cx="146" cy="96" r="8"/>
+    <circle cx="462" cy="48" r="8"/>
+    <circle cx="760" cy="74" r="8"/>
+    <circle cx="928" cy="160" r="8"/>
+    <circle cx="224" cy="260" r="8"/>
+    <circle cx="570" cy="580" r="8"/>
+    <circle cx="1110" cy="278" r="8"/>
+  </g>
+  <g filter="url(#panelShadow)">
+    <rect x="110" y="142" width="980" height="438" rx="32" fill="#111115" fill-opacity="0.94"/>
+    <rect x="110.75" y="142.75" width="978.5" height="436.5" rx="31.25" stroke="url(#panelStroke)" stroke-opacity="0.85" stroke-width="1.5"/>
+  </g>
+  <g>
+    <circle cx="160" cy="194" r="22" fill="#E2BE6B"/>
+    <path d="M160 174C151 180 146 190 146 201C154 198 164 199 172 204C169 193 165 184 160 174Z" fill="#111115"/>
+    <path d="M177 194C168 198 161 205 157 214C166 215 175 220 181 227C184 216 183 204 177 194Z" fill="#111115"/>
+    <path d="M160 214C151 209 141 209 132 213C139 219 143 228 144 238C153 232 159 224 160 214Z" fill="#111115"/>
+  </g>
+  <text x="198" y="205" fill="#F5F5F5" font-size="24" font-family="Arial, Helvetica, sans-serif">Typing Test</text>
+  <text x="150" y="286" fill="#F5F5F5" font-size="48" font-weight="700" font-family="Arial, Helvetica, sans-serif">Test Your Typing Speed</text>
+  <g filter="url(#softGlow)">
+    <rect x="652" y="158" width="370" height="140" rx="28" fill="#1A1A1F" fill-opacity="0.9"/>
+    <rect x="652.75" y="158.75" width="368.5" height="138.5" rx="27.25" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1.5"/>
+    <text x="690" y="198" fill="#F5F5F5" font-size="18" font-family="Arial, Helvetica, sans-serif">Live Stats</text>
+    <path d="M969 189L978 198L992 184" stroke="#E6E7EA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="690" y="238" fill="#F5F5F5" font-size="18" font-family="Arial, Helvetica, sans-serif">WPM (Words Per Minute)</text>
+    <text x="690" y="274" fill="#F5F5F5" font-size="18" font-family="Arial, Helvetica, sans-serif">Accuracy</text>
+    <text x="806" y="274" fill="#F07676" font-size="18" font-family="Arial, Helvetica, sans-serif">%</text>
+  </g>
+  <g filter="url(#softGlow)">
+    <rect x="150" y="336" width="560" height="214" rx="24" fill="#1B1B20" fill-opacity="0.9"/>
+    <text x="173" y="382" fill="#E2BE6B" font-size="18" font-family="Arial, Helvetica, sans-serif">Highlight</text>
+    <circle cx="272" cy="375" r="5" fill="#E2BE6B"/>
+    <text x="289" y="382" fill="#F5F5F5" font-size="18" font-family="Arial, Helvetica, sans-serif">Correct</text>
+    <text x="395" y="382" fill="#F5F5F5" font-size="18" font-family="Arial, Helvetica, sans-serif">/</text>
+    <text x="418" y="382" fill="#F5F5F5" font-size="18" font-family="Arial, Helvetica, sans-serif">Incorrect</text>
+    <text x="558" y="382" fill="#E25E5E" font-size="18" font-family="Arial, Helvetica, sans-serif">/ Incorrect</text>
+    <text x="173" y="438" fill="#EFEFF1" font-size="18" font-family="Arial, Helvetica, sans-serif">Yomple text con woh'nol reaple text your lto's thed golints ted your</text>
+    <text x="173" y="468" fill="#EFEFF1" font-size="18" font-family="Arial, Helvetica, sans-serif">por yor cheracaderd your hestionighohics speeed loy apivence.</text>
+    <text x="173" y="515" fill="#D6D7DA" font-size="16" font-family="Arial, Helvetica, sans-serif">Interactions (iterations)</text>
+    <path d="M176 538H630" stroke="#E7C670" stroke-opacity="0.18" stroke-width="4" stroke-linecap="round"/>
+    <path d="M176 539C264 539 352 539 440 539C470 539 486 539 501 539C515 539 520 532 525 524C529 538 534 549 540 526C544 543 548 557 553 520C557 540 563 548 568 530C573 536 581 539 594 539C604 539 616 539 632 539" stroke="url(#pulse)" stroke-width="4" stroke-linecap="round"/>
+    <g filter="url(#goldBurst)">
+      <circle cx="532" cy="538" r="32" fill="#D4AF37" fill-opacity="0.22"/>
+      <circle cx="558" cy="532" r="46" fill="#E7C670" fill-opacity="0.18"/>
+    </g>
+    <path d="M646 516L672 543L661 543L661 572L650 572L650 543L639 543L646 516Z" fill="#F4E6BC"/>
+    <path d="M652 572L646 586" stroke="#F4E6BC" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g filter="url(#softGlow)">
+    <rect x="768" y="330" width="252" height="126" rx="24" fill="#1A1A1F" fill-opacity="0.92"/>
+    <rect x="768.75" y="330.75" width="250.5" height="124.5" rx="23.25" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1.5"/>
+    <text x="796" y="370" fill="#F5F5F5" font-size="18" font-family="Arial, Helvetica, sans-serif">Time Down</text>
+    <text x="796" y="414" fill="#F5F5F5" font-size="20" font-family="Arial, Helvetica, sans-serif">60m</text>
+    <text x="944" y="414" fill="#F5F5F5" font-size="20" font-family="Arial, Helvetica, sans-serif">60s</text>
+    <path d="M796 432H982" stroke="#6E7075" stroke-width="4" stroke-linecap="round"/>
+    <path d="M846 432H904" stroke="#E45858" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="904" cy="432" r="11" fill="#FF5D5D"/>
+    <circle cx="904" cy="432" r="22" fill="#FF5D5D" fill-opacity="0.16"/>
+  </g>
+  <text x="796" y="505" fill="#F5F5F5" font-size="18" font-family="Arial, Helvetica, sans-serif">Difficulty Selects</text>
+  <g>
+    <path d="M812 522H962" stroke="#6F7175" stroke-width="4" stroke-linecap="round"/>
+    <path d="M812 522H932" stroke="#E7C670" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="932" cy="522" r="14" fill="#FFF6E1"/>
+    <circle cx="932" cy="522" r="28" fill="#E7C670" fill-opacity="0.14"/>
+    <circle cx="992" cy="522" r="13" fill="#151518" stroke="#85888F" stroke-width="3"/>
+    <path d="M992 510V517" stroke="#85888F" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M998 516L992 522L986 516" stroke="#85888F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g filter="url(#buttonGlow)">
+    <rect x="792" y="556" width="248" height="46" rx="23" fill="url(#buttonFill)"/>
+    <text x="868" y="586" fill="#171717" font-size="18" font-family="Arial, Helvetica, sans-serif">Start / Restart</text>
+  </g>
+  <defs>
+    <linearGradient id="panelStroke" x1="110" y1="142" x2="1090" y2="580" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6E5C30"/>
+      <stop offset="0.55" stop-color="#2C2923"/>
+      <stop offset="1" stop-color="#8A6A33"/>
+    </linearGradient>
+    <linearGradient id="pulse" x1="176" y1="531" x2="632" y2="531" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D4AF37" stop-opacity="0.15"/>
+      <stop offset="0.32" stop-color="#E5CB89"/>
+      <stop offset="0.62" stop-color="#F6D58B"/>
+      <stop offset="1" stop-color="#D4AF37" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="buttonFill" x1="792" y1="556" x2="1040" y2="602" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF0BF"/>
+      <stop offset="0.55" stop-color="#F6D27B"/>
+      <stop offset="1" stop-color="#E7B94E"/>
+    </linearGradient>
+    <filter id="panelShadow" x="84" y="120" width="1032" height="486" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="10"/>
+      <feGaussianBlur stdDeviation="13"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0196078 0 0 0 0 0.0196078 0 0 0 0 0.0235294 0 0 0 0.46 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_2"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_2" result="shape"/>
+    </filter>
+    <filter id="softGlow" x="138" y="146" width="896" height="468" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur_1_2"/>
+    </filter>
+    <filter id="goldBurst" x="480" y="480" width="124" height="110" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="18" result="effect1_foregroundBlur_1_2"/>
+    </filter>
+    <filter id="buttonGlow" x="772" y="536" width="288" height="86" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_1_2"/>
+    </filter>
+  </defs>
+</svg>

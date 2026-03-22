@@ -1,0 +1,133 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="36" fill="#09090B"/>
+  <g opacity="0.24" stroke="#6A5628" stroke-width="2">
+    <path d="M44 134L170 74L318 138L486 58L646 114L808 82L972 154L1168 94"/>
+    <path d="M36 706L124 568L98 394L210 266L182 112"/>
+    <path d="M570 712L622 574L586 400L716 244L678 80"/>
+    <path d="M1036 0L1132 112L1096 246L1182 412L1118 560L1144 720"/>
+  </g>
+  <g fill="#D4AF37" opacity="0.72">
+    <circle cx="170" cy="74" r="8"/>
+    <circle cx="486" cy="58" r="8"/>
+    <circle cx="808" cy="82" r="8"/>
+    <circle cx="972" cy="154" r="8"/>
+    <circle cx="210" cy="266" r="8"/>
+    <circle cx="622" cy="574" r="8"/>
+    <circle cx="1132" cy="112" r="8"/>
+  </g>
+  <g filter="url(#backShadow)">
+    <rect x="118" y="212" width="954" height="240" rx="32" fill="#111114" fill-opacity="0.74"/>
+    <rect x="118.75" y="212.75" width="952.5" height="238.5" rx="31.25" stroke="#B38D43" stroke-opacity="0.5" stroke-width="1.5"/>
+  </g>
+  <g filter="url(#panelShadow)">
+    <rect x="176" y="130" width="842" height="402" rx="34" fill="#121214" fill-opacity="0.95"/>
+    <rect x="176.75" y="130.75" width="840.5" height="400.5" rx="33.25" stroke="url(#panelStroke)" stroke-opacity="0.84" stroke-width="1.5"/>
+  </g>
+  <text x="514" y="176" fill="#F5F5F5" font-size="20" font-family="Arial, Helvetica, sans-serif">Precision Time Tracking</text>
+  <path d="M212 182L200 170L212 158" stroke="#F2DCA4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M974 156L992 174" stroke="#696969" stroke-width="3" stroke-linecap="round"/>
+  <path d="M992 156L974 174" stroke="#696969" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="986" cy="146" r="7" fill="#E6C57E"/>
+  <g filter="url(#softGlow)">
+    <rect x="228" y="206" width="676" height="286" rx="34" fill="url(#mainPanel)" fill-opacity="0.92"/>
+    <rect x="228.75" y="206.75" width="674.5" height="284.5" rx="33.25" stroke="#B89445" stroke-opacity="0.72" stroke-width="1.5"/>
+  </g>
+  <g>
+    <circle cx="336" cy="348" r="104" stroke="#5A5A5C" stroke-width="6"/>
+    <path d="M336 244C304 254 277 281 266 314" stroke="#EDCC8E" stroke-width="8" stroke-linecap="round"/>
+    <path d="M266 408C282 436 304 454 342 462" stroke="#EDCC8E" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="342" cy="462" r="10" fill="#F4E6C1"/>
+    <circle cx="338" cy="226" r="5" fill="#F4E6C1"/>
+  </g>
+  <g filter="url(#dustGlow)">
+    <circle cx="402" cy="340" r="40" fill="#D4AF37" fill-opacity="0.2"/>
+    <circle cx="436" cy="350" r="60" fill="#E6C57E" fill-opacity="0.14"/>
+  </g>
+  <text x="486" y="266" fill="#E7C670" font-size="34" font-weight="700" font-family="Arial, Helvetica, sans-serif">Stopwatch</text>
+  <text x="430" y="350" fill="#FFFFFF" font-size="58" font-family="Arial, Helvetica, sans-serif">HH:MM:SS</text>
+  <text x="770" y="350" fill="#D7D7D9" font-size="34" font-family="Arial, Helvetica, sans-serif">.ms</text>
+  <text x="488" y="408" fill="#F1F1F1" font-size="18" font-family="Arial, Helvetica, sans-serif">Options toned running</text>
+  <text x="794" y="286" fill="#F1F1F1" font-size="18" font-family="Arial, Helvetica, sans-serif">Start / Pulse</text>
+  <g>
+    <circle cx="822" cy="336" r="18" fill="url(#buttonFill)"/>
+    <circle cx="882" cy="336" r="18" fill="url(#buttonFill)"/>
+    <circle cx="822" cy="336" r="7" fill="#262626"/>
+    <rect x="876" y="329" width="4" height="14" rx="2" fill="#262626"/>
+    <rect x="884" y="329" width="4" height="14" rx="2" fill="#262626"/>
+  </g>
+  <g filter="url(#buttonGlow)">
+    <rect x="766" y="364" width="210" height="50" rx="25" fill="#1D1D1F" stroke="#BA964B" stroke-width="1.5"/>
+    <text x="792" y="395" fill="#F3F3F4" font-size="17" font-family="Arial, Helvetica, sans-serif">START / PAUSE</text>
+    <circle cx="948" cy="389" r="11" fill="url(#buttonFill)"/>
+  </g>
+  <g>
+    <rect x="446" y="454" width="126" height="44" rx="22" fill="#171719" stroke="#444448"/>
+    <rect x="576" y="454" width="120" height="44" rx="22" fill="#171719" stroke="#444448"/>
+    <text x="482" y="482" fill="#F2F2F2" font-size="17" font-family="Arial, Helvetica, sans-serif">RESET</text>
+    <text x="612" y="482" fill="#F2F2F2" font-size="17" font-family="Arial, Helvetica, sans-serif">RESET</text>
+  </g>
+  <g filter="url(#buttonGlow)">
+    <circle cx="594" cy="476" r="32" fill="#151517" stroke="#E3BF6D" stroke-width="3"/>
+    <circle cx="594" cy="476" r="42" fill="#E3BF6D" fill-opacity="0.16"/>
+    <rect x="584" y="462" width="7" height="28" rx="3.5" fill="#E5C36F"/>
+    <rect x="597" y="462" width="7" height="28" rx="3.5" fill="#E5C36F"/>
+  </g>
+  <g opacity="0.78">
+    <rect x="108" y="248" width="62" height="170" rx="18" fill="#121214" stroke="#B08B42" stroke-opacity="0.64"/>
+    <path d="M136 276H154" stroke="#E7C670" stroke-width="4" stroke-linecap="round"/>
+    <path d="M136 290H154" stroke="#E7C670" stroke-width="4" stroke-linecap="round"/>
+    <path d="M136 304H154" stroke="#E7C670" stroke-width="4" stroke-linecap="round"/>
+    <path d="M130 386H138V394H130V386Z" fill="#E7C670"/>
+    <path d="M144 372H152V380H144V372Z" fill="#E7C670"/>
+    <path d="M144 400H152V408H144V400Z" fill="#E7C670"/>
+    <path d="M158 386H166V394H158V386Z" fill="#E7C670"/>
+  </g>
+  <circle cx="1084" cy="430" r="20" fill="#141417"/>
+  <text x="1068" y="436" fill="#E9E9EA" font-size="15" font-family="Arial, Helvetica, sans-serif">LAP</text>
+  <defs>
+    <linearGradient id="panelStroke" x1="176" y1="130" x2="1018" y2="532" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6A5930"/>
+      <stop offset="0.55" stop-color="#2D2A25"/>
+      <stop offset="1" stop-color="#8A6A33"/>
+    </linearGradient>
+    <linearGradient id="mainPanel" x1="228" y1="206" x2="904" y2="492" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#232327"/>
+      <stop offset="0.5" stop-color="#1A1A1D"/>
+      <stop offset="1" stop-color="#151518"/>
+    </linearGradient>
+    <linearGradient id="buttonFill" x1="804" y1="318" x2="970" y2="404" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF0BF"/>
+      <stop offset="0.56" stop-color="#F2CC79"/>
+      <stop offset="1" stop-color="#DDAA46"/>
+    </linearGradient>
+    <filter id="backShadow" x="92" y="186" width="1006" height="292" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_1_2"/>
+    </filter>
+    <filter id="panelShadow" x="148" y="104" width="898" height="454" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="10"/>
+      <feGaussianBlur stdDeviation="14"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0196078 0 0 0 0 0.0196078 0 0 0 0 0.0235294 0 0 0 0.48 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_2"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_2" result="shape"/>
+    </filter>
+    <filter id="softGlow" x="212" y="190" width="708" height="318" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="6" result="effect1_foregroundBlur_1_2"/>
+    </filter>
+    <filter id="dustGlow" x="336" y="274" width="160" height="136" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="18" result="effect1_foregroundBlur_1_2"/>
+    </filter>
+    <filter id="buttonGlow" x="430" y="418" width="572" height="104" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_1_2"/>
+    </filter>
+  </defs>
+</svg>

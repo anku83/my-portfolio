@@ -36,8 +36,8 @@ export function ProjectsSection() {
                 <div className="project-image relative mb-7 overflow-hidden rounded-[22px] border border-white/10">
                   <div className="absolute inset-0 z-[2] bg-[linear-gradient(180deg,rgba(11,11,12,0.16),transparent_44%)]" />
                   <Image
-                    src="/project-placeholder.svg"
-                    alt={`${project.title} placeholder preview`}
+                    src={project.image}
+                    alt={`${project.title} preview`}
                     width={1200}
                     height={720}
                     className="h-48 w-full object-cover transition duration-700 group-hover:scale-105"

@@ -28,6 +28,7 @@ export type ProjectItem = {
   stack: string[];
   href: string;
   highlight: string;
+  image: string;
 };
 
 export type ExperienceItem = {
@@ -91,7 +92,8 @@ export const projects: ProjectItem[] = [
       "A polished stopwatch and timer web app with lap tracking, session history, themes, offline support, and installable PWA behavior for daily use.",
     stack: ["HTML", "CSS", "JavaScript", "PWA"],
     href: "https://github.com/anku83/Watchy",
-    highlight: "Performance-first utility experience"
+    highlight: "Performance-first utility experience",
+    image: "/stopwatch-preview.svg"
   },
   {
     title: "Typing Speed Test",
@@ -100,7 +102,8 @@ export const projects: ProjectItem[] = [
       "An interactive typing trainer that measures WPM, accuracy, and errors in real time while giving immediate visual feedback on every keystroke.",
     stack: ["HTML", "CSS", "JavaScript", "Responsive UI"],
     href: "https://github.com/anku83/typing-speed-test",
-    highlight: "Real-time interaction design"
+    highlight: "Real-time interaction design",
+    image: "/typing-test-preview.svg"
   },
   {
     title: "Road Condition ML System",
@@ -109,7 +112,8 @@ export const projects: ProjectItem[] = [
       "A machine learning pipeline and lightweight backend that classifies road conditions from labeled data after cleaning, encoding, and model training.",
     stack: ["Python", "Machine Learning", "Flask/FastAPI"],
     href: "https://github.com/anku83/road-condition-classification-streamlit",
-    highlight: "Applied ML with deployable prediction flow"
+    highlight: "Applied ML with deployable prediction flow",
+    image: "/road-classification-preview.svg"
   }
 ];
 
