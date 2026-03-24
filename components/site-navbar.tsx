@@ -18,6 +18,7 @@ const navItems = [
 
 export function SiteNavbar({ name }: { name: string }) {
   const [activeSection, setActiveSection] = useState("home");
+  const [menuOpen, setMenuOpen] = useState(false);
   const headerRef = useRef<HTMLElement | null>(null);
   const shellRef = useRef<HTMLDivElement | null>(null);
   const navListRef = useRef<HTMLUListElement | null>(null);
@@ -274,9 +275,21 @@ export function SiteNavbar({ name }: { name: string }) {
     });
   }, [activeSection]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize, { passive: true });
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const handleNavigate = (id: string) => (event: MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
     activeIdRef.current = id;
+    setMenuOpen(false);
 
     const link = linkRefs.current[id];
     if (link) {
@@ -305,7 +318,7 @@ export function SiteNavbar({ name }: { name: string }) {
       <div className="container-lux pt-4 sm:pt-5">
         <div
           ref={shellRef}
-          className="flex items-center justify-between rounded-full border border-white/10 bg-[rgba(10,10,10,0.72)] px-4 py-3 backdrop-blur-[8px] sm:px-6"
+          className="relative flex items-center justify-between rounded-full border border-white/10 bg-[rgba(10,10,10,0.72)] px-4 py-3 backdrop-blur-[8px] sm:px-6"
         >
           <a
             href="#home"
@@ -316,8 +329,26 @@ export function SiteNavbar({ name }: { name: string }) {
             {name}
           </a>
 
-          <nav aria-label="Primary">
-            <ul ref={navListRef} className="relative flex items-center gap-1 sm:gap-2">
+          <button
+            type="button"
+            aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={menuOpen}
+            aria-controls="primary-navigation"
+            onClick={() => setMenuOpen((open) => !open)}
+            className="nav-toggle inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-[rgba(255,255,255,0.03)] text-[#EDEDED] lg:hidden"
+            data-cursor="hover"
+          >
+            <span className="nav-toggle-bar" />
+            <span className="nav-toggle-bar" />
+            <span className="nav-toggle-bar" />
+          </button>
+
+          <nav
+            id="primary-navigation"
+            aria-label="Primary"
+            className={clsx("nav-panel", menuOpen && "nav-panel-open")}
+          >
+            <ul ref={navListRef} className="nav-list relative flex items-center gap-1 sm:gap-2">
               <span
                 ref={indicatorRef}
                 aria-hidden="true"

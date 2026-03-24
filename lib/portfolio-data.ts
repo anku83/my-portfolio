@@ -48,6 +48,7 @@ export const intro = {
   name: "Ankit Kumar",
   title: "Data Analyst | Developer",
   location: "Koderma, Jharkhand",
+  profileImage: "/Ankitimage.jpeg",
   email: "ankitkumar56083@gmail.com",
   phone: "+91 72095 98117",
   linkedin: "https://www.linkedin.com/in/ankit-kumar-s25/",
@@ -147,7 +148,7 @@ export const education = [
     school: "Lovely Professional University, Punjab",
     detail: "B.Tech in Computer Science and Engineering",
     period: "2023 - 2027",
-    metric: "CGPA 6.33",
+    metric: "CGPA 6.7",
     location: "Jalandhar, Punjab"
   },
   {

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { intro, heroStats } from "@/lib/portfolio-data";
 import { MagneticButton } from "@/components/magnetic-button";
 import { GlassCard } from "@/components/glass-card";
@@ -9,6 +9,7 @@ import { useSceneReveal } from "@/hooks/use-scene-reveal";
 
 export function HeroSection({ onPreviewCV }: { onPreviewCV: () => void }) {
   const ref = useRef<HTMLElement | null>(null);
+  const [profileSrc, setProfileSrc] = useState(intro.profileImage);
   useSceneReveal(ref);
 
   return (
@@ -56,16 +57,24 @@ export function HeroSection({ onPreviewCV }: { onPreviewCV: () => void }) {
         <div className="relative z-10" data-animate>
           <GlassCard className="relative overflow-hidden rounded-[34px] p-5 shadow-ember sm:p-7">
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.02),transparent)]" />
-            <div className="glass-card glass-panel relative rounded-[28px] p-6">
-              <Image
-                src="/profile-placeholder.svg"
-                alt="Profile placeholder for Ankit Kumar"
-                width={720}
-                height={920}
-                priority
-                className="h-auto w-full rounded-[22px] object-cover"
-              />
-              <div className="glass-card glass-panel mt-5 rounded-[20px] px-5 py-4">
+            <div className="hero-portrait-shell glass-card glass-panel relative rounded-[28px] p-4 sm:p-6">
+              <div className="hero-portrait-glow absolute left-1/2 top-10 h-40 w-40 -translate-x-1/2 rounded-full bg-[#D4AF37]/20 blur-3xl" />
+              <div className="absolute inset-x-6 top-6 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+              <div className="hero-portrait-frame relative z-10 overflow-hidden rounded-[24px]">
+                <div className="hero-portrait-ring" />
+                <div className="hero-portrait-shimmer" />
+                <div className="hero-portrait-overlay" />
+                <Image
+                  src={profileSrc}
+                  alt="Portrait of Ankit Kumar"
+                  width={720}
+                  height={920}
+                  priority
+                  onError={() => setProfileSrc("/profile-placeholder.svg")}
+                  className="hero-portrait relative z-10 aspect-[4/5] w-full rounded-[24px] object-cover object-[center_18%]"
+                />
+              </div>
+              <div className="glass-card glass-panel relative z-10 mt-5 rounded-[20px] px-5 py-4">
                 <p className="text-xs uppercase tracking-[0.34em] text-[#A1A1AA]">Current focus</p>
                 <p className="mt-3 text-lg leading-8 text-[#EDEDED]">
                   Building stronger instincts in analytics, machine learning, and product-minded front-end development.
