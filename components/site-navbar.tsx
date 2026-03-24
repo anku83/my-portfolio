@@ -326,7 +326,7 @@ export function SiteNavbar({ name }: { name: string }) {
             className="nav-logo text-sm font-bold uppercase tracking-[0.28em] text-[#EDEDED] sm:text-[0.95rem]"
             data-cursor="hover"
           >
-            {name}
+            <span className="nav-logo-mark">{name}</span>
           </a>
 
           <button

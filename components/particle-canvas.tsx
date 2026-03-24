@@ -35,8 +35,8 @@ function clamp(value: number, min: number, max: number) {
 
 function computeParticleCount(width: number, height: number) {
   const area = width * height;
-  const density = window.matchMedia("(pointer: coarse)").matches ? 1 / 11000 : 1 / 6800;
-  return clamp(Math.round(area * density), 220, 1180);
+  const density = window.matchMedia("(pointer: coarse)").matches ? 1 / 10000 : 1 / 6200;
+  return clamp(Math.round(area * density), 240, 1260);
 }
 
 function createParticles(width: number, height: number) {

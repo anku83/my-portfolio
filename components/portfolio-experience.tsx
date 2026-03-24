@@ -28,7 +28,7 @@ export function PortfolioExperience() {
       <ParticleCanvas />
       <ScrollProgress />
       <CustomCursor />
-      <SiteNavbar name={intro.name} />
+      <SiteNavbar name="AK" />
 
       <div className="relative z-10">
         <HeroSection onPreviewCV={() => setIsCVOpen(true)} />
