@@ -38,6 +38,11 @@ export type ExperienceItem = {
   points: string[];
 };
 
+export type AchievementItem = {
+  label: string;
+  href?: string;
+};
+
 export const heroStats = [
   { label: "Internships", value: "2" },
   { label: "Projects shipped", value: "3" },
@@ -167,10 +172,25 @@ export const education = [
   }
 ];
 
-export const achievements = [
-  "Oracle AI Foundation Certified",
-  "Oracle Generative AI Certified",
-  "Top 30 in CodeXtreme 2.0 Neo Codeathon",
-  "Deloitte Data Analytics Certification",
-  "LPU Data Analytics Essentials Certification"
+export const achievements: AchievementItem[] = [
+  {
+    label: "Oracle AI Foundation Certified",
+    href: "https://drive.google.com/file/d/11a45326NYLe0PKaGwKEbj46NPPxKwBAQ/view"
+  },
+  {
+    label: "Oracle Generative AI Certified",
+    href: "https://drive.google.com/file/d/1jIC-o5KUt6Xa6pNzhOjSPM4dh-J88QeS/view"
+  },
+  {
+    label: "Top 30 in CodeXtreme 2.0 Neo Codeathon",
+    href: "https://drive.google.com/file/d/12ybC-PoyP1eSvX1ysijfZQ3BRJ2ge6VM/view"
+  },
+  {
+    label: "Deloitte Data Analytics Certification",
+    href: "https://drive.google.com/file/d/1Wzx-LhPD5bSS5a4uOAv1WuhJJCruyx_l/view"
+  },
+  {
+    label: "LPU Data Analytics Essentials Certification",
+    href: "https://drive.google.com/file/d/10OmBmWHlKuENvD5knefjNItdqL0Je53h/view"
+  }
 ];

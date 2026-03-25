@@ -6,6 +6,7 @@ import { intro, heroStats } from "@/lib/portfolio-data";
 import { MagneticButton } from "@/components/magnetic-button";
 import { GlassCard } from "@/components/glass-card";
 import { useSceneReveal } from "@/hooks/use-scene-reveal";
+import { CV_FILE_PATH } from "@/lib/cv";
 
 export function HeroSection({ onPreviewCV }: { onPreviewCV: () => void }) {
   const ref = useRef<HTMLElement | null>(null);
@@ -39,7 +40,7 @@ export function HeroSection({ onPreviewCV }: { onPreviewCV: () => void }) {
             <MagneticButton onClick={onPreviewCV} className="bg-[#121212] text-[#EDEDED] border border-white/10 hover:bg-[rgba(255,255,255,0.02)]">
               Preview CV
             </MagneticButton>
-            <MagneticButton href="/cv/ankit-kumar-cv.docx" download className="bg-[#121212] text-[#EDEDED] border border-white/10 hover:bg-[rgba(255,255,255,0.02)]">
+            <MagneticButton href={CV_FILE_PATH} download className="bg-[#121212] text-[#EDEDED] border border-white/10 hover:bg-[rgba(255,255,255,0.02)]">
               Download CV
             </MagneticButton>
           </div>

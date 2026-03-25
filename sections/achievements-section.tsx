@@ -20,14 +20,17 @@ export function AchievementsSection() {
 
         <div className="mt-14 flex flex-wrap gap-4">
           {achievements.map((achievement) => (
-            <div
-              key={achievement}
+            <a
+              key={achievement.label}
+              href={achievement.href}
+              target={achievement.href ? "_blank" : undefined}
+              rel={achievement.href ? "noreferrer" : undefined}
               className="tag hover-glow border border-white/10 bg-[#121212] px-5 py-4 text-sm uppercase tracking-[0.18em] text-[#EDEDED] shadow-none transition duration-300"
               data-animate
               data-cursor="hover"
             >
-              {achievement}
-            </div>
+              {achievement.label}
+            </a>
           ))}
         </div>
       </div>

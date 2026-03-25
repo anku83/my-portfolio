@@ -10,7 +10,7 @@ const navItems = [
   { label: "About", id: "about" },
   { label: "Skills", id: "skills" },
   { label: "Projects", id: "projects" },
-  { label: "Certificates", id: "cv" },
+  { label: "Certificates", id: "achievements" },
   { label: "Achievements", id: "achievements" },
   { label: "Education", id: "education" },
   { label: "Contact", id: "contact" },
@@ -34,24 +34,56 @@ export function SiteNavbar({ name }: { name: string }) {
 
     if (sections.length === 0) return;
 
+    const visibleSections = new Map<string, IntersectionObserverEntry>();
+    let frame = 0;
+
+    const updateActiveSection = () => {
+      frame = 0;
+
+      const nextActive = Array.from(visibleSections.values())
+        .sort((a, b) => {
+          const aOffset = Math.abs(a.boundingClientRect.top - window.innerHeight * 0.24);
+          const bOffset = Math.abs(b.boundingClientRect.top - window.innerHeight * 0.24);
+
+          if (aOffset !== bOffset) return aOffset - bOffset;
+          return b.intersectionRatio - a.intersectionRatio;
+        })[0];
+
+      if (nextActive?.target.id && nextActive.target.id !== activeIdRef.current) {
+        setActiveSection(nextActive.target.id);
+      }
+    };
+
     const observer = new IntersectionObserver(
       (entries) => {
-        const visible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            visibleSections.set(entry.target.id, entry);
+            return;
+          }
 
-        if (visible?.target.id) {
-          setActiveSection(visible.target.id);
+          visibleSections.delete(entry.target.id);
+        });
+
+        if (!frame) {
+          frame = window.requestAnimationFrame(updateActiveSection);
         }
       },
       {
-        rootMargin: "-28% 0px -52% 0px",
-        threshold: [0.2, 0.4, 0.6],
+        rootMargin: "-18% 0px -58% 0px",
+        threshold: [0, 0.15, 0.3, 0.45, 0.6, 0.75],
       }
     );
 
     sections.forEach((section) => observer.observe(section));
-    return () => observer.disconnect();
+
+    return () => {
+      observer.disconnect();
+      visibleSections.clear();
+      if (frame) {
+        window.cancelAnimationFrame(frame);
+      }
+    };
   }, [ids]);
 
   useEffect(() => {
@@ -354,8 +386,8 @@ export function SiteNavbar({ name }: { name: string }) {
                 aria-hidden="true"
                 className="nav-indicator pointer-events-none absolute bottom-0 left-0 h-px w-px origin-left"
               />
-              {navItems.map((item) => (
-                <li key={item.id}>
+              {navItems.map((item, index) => (
+                <li key={`${item.id}-${index}`}>
                   <a
                     ref={(node) => {
                       linkRefs.current[item.id] = node;

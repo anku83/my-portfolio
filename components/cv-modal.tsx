@@ -1,8 +1,11 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { CV_FILE_NAME, CV_FILE_PATH, getCVPreviewUrl } from "@/lib/cv";
 
 export function CVModal({ open, onClose }: { open: boolean; onClose: () => void }) {
+  const [previewUrl, setPreviewUrl] = useState<string | null>(null);
+
   useEffect(() => {
     if (!open) return;
 
@@ -12,6 +15,7 @@ export function CVModal({ open, onClose }: { open: boolean; onClose: () => void 
 
     document.body.style.overflow = "hidden";
     window.addEventListener("keydown", onKey);
+    setPreviewUrl(getCVPreviewUrl(window.location.origin));
 
     return () => {
       document.body.style.overflow = "";
@@ -32,20 +36,12 @@ export function CVModal({ open, onClose }: { open: boolean; onClose: () => void 
           </div>
           <div className="flex flex-wrap items-center gap-3">
             <a
-              href="/cv/ankit-kumar-cv-preview.pdf"
+              href={CV_FILE_PATH}
               download
               className="rounded-full border border-white/10 px-4 py-2 text-xs uppercase tracking-[0.24em] text-[#EDEDED] transition hover:border-[rgba(212,175,55,0.5)] hover:bg-[rgba(255,255,255,0.02)]"
               data-cursor="hover"
             >
-              Download PDF
-            </a>
-            <a
-              href="/cv/ankit-kumar-cv.docx"
-              download
-              className="rounded-full border border-white/10 px-4 py-2 text-xs uppercase tracking-[0.24em] text-[#A1A1AA] transition hover:border-[rgba(212,175,55,0.5)] hover:text-[#FACC15]"
-              data-cursor="hover"
-            >
-              Download DOCX
+              Download CV
             </a>
             <button
               onClick={onClose}
@@ -57,7 +53,25 @@ export function CVModal({ open, onClose }: { open: boolean; onClose: () => void 
           </div>
         </div>
         <div className="min-h-[70vh] bg-black/20 p-3 sm:p-4">
-          <iframe title="Ankit Kumar CV Preview" src="/cv/ankit-kumar-cv-preview.pdf" className="h-[70vh] w-full rounded-[24px] border border-white/10 bg-white" />
+          {previewUrl ? (
+            <iframe title="Ankit Kumar CV Preview" src={previewUrl} className="h-[70vh] w-full rounded-[24px] border border-white/10 bg-white" />
+          ) : (
+            <div className="flex h-[70vh] flex-col items-center justify-center rounded-[24px] border border-white/10 bg-[radial-gradient(circle_at_top,rgba(212,175,55,0.16),transparent_42%),rgba(255,255,255,0.03)] px-6 text-center">
+              <p className="eyebrow">Word Template</p>
+              <h4 className="mt-4 font-display text-3xl text-[#EDEDED]">Specialised CV ready for download</h4>
+              <p className="mt-4 max-w-2xl text-sm leading-7 text-[#A1A1AA] sm:text-base">
+                Browser preview for Word files is available after deployment on a public URL. In local development, use the button below to open the original template directly.
+              </p>
+              <a
+                href={CV_FILE_PATH}
+                download
+                className="mt-8 rounded-full border border-white/10 px-6 py-3 text-xs uppercase tracking-[0.24em] text-[#EDEDED] transition hover:border-[rgba(212,175,55,0.5)] hover:bg-[rgba(255,255,255,0.02)]"
+                data-cursor="hover"
+              >
+                Download {CV_FILE_NAME}
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </div>
