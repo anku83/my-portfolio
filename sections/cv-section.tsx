@@ -12,7 +12,7 @@ export function CVSection({ onPreviewCV }: { onPreviewCV: () => void }) {
   useSceneReveal(ref);
 
   return (
-    <section ref={ref} id="cv" className="section-frame">
+    <section ref={ref} id="certificates" className="section-frame">
       <div className="container-lux">
         <GlassCard className="p-8 shadow-ember sm:p-10 lg:p-12">
           <SectionHeading

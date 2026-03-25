@@ -36,9 +36,9 @@ export function PortfolioExperience() {
         <SkillsSection />
         <ProjectsSection />
         <ExperienceSection />
-        <EducationSection />
-        <AchievementsSection />
         <CVSection onPreviewCV={() => setIsCVOpen(true)} />
+        <AchievementsSection />
+        <EducationSection />
         <ContactSection />
         <SiteFooter
           name={intro.name}

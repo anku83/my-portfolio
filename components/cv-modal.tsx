@@ -1,11 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { CV_FILE_NAME, CV_FILE_PATH, getCVPreviewUrl } from "@/lib/cv";
+import { useEffect } from "react";
+import { CV_FILE_PATH } from "@/lib/cv";
+
+const CV_PREVIEW_PATH = "/cv/Specialised%20CV%20Template%20Ankit%20org%20(2).pdf";
 
 export function CVModal({ open, onClose }: { open: boolean; onClose: () => void }) {
-  const [previewUrl, setPreviewUrl] = useState<string | null>(null);
-
   useEffect(() => {
     if (!open) return;
 
@@ -15,7 +15,6 @@ export function CVModal({ open, onClose }: { open: boolean; onClose: () => void 
 
     document.body.style.overflow = "hidden";
     window.addEventListener("keydown", onKey);
-    setPreviewUrl(getCVPreviewUrl(window.location.origin));
 
     return () => {
       document.body.style.overflow = "";
@@ -53,25 +52,7 @@ export function CVModal({ open, onClose }: { open: boolean; onClose: () => void 
           </div>
         </div>
         <div className="min-h-[70vh] bg-black/20 p-3 sm:p-4">
-          {previewUrl ? (
-            <iframe title="Ankit Kumar CV Preview" src={previewUrl} className="h-[70vh] w-full rounded-[24px] border border-white/10 bg-white" />
-          ) : (
-            <div className="flex h-[70vh] flex-col items-center justify-center rounded-[24px] border border-white/10 bg-[radial-gradient(circle_at_top,rgba(212,175,55,0.16),transparent_42%),rgba(255,255,255,0.03)] px-6 text-center">
-              <p className="eyebrow">Word Template</p>
-              <h4 className="mt-4 font-display text-3xl text-[#EDEDED]">Specialised CV ready for download</h4>
-              <p className="mt-4 max-w-2xl text-sm leading-7 text-[#A1A1AA] sm:text-base">
-                Browser preview for Word files is available after deployment on a public URL. In local development, use the button below to open the original template directly.
-              </p>
-              <a
-                href={CV_FILE_PATH}
-                download
-                className="mt-8 rounded-full border border-white/10 px-6 py-3 text-xs uppercase tracking-[0.24em] text-[#EDEDED] transition hover:border-[rgba(212,175,55,0.5)] hover:bg-[rgba(255,255,255,0.02)]"
-                data-cursor="hover"
-              >
-                Download {CV_FILE_NAME}
-              </a>
-            </div>
-          )}
+          <iframe title="Ankit Kumar CV Preview" src={CV_PREVIEW_PATH} className="h-[70vh] w-full rounded-[24px] border border-white/10 bg-white" />
         </div>
       </div>
     </div>
